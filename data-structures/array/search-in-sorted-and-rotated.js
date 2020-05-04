@@ -17,6 +17,6 @@ function search(nums, l, h, key) {
 }
 
 var nums = [4, 5, 6, 7, 8, 9, 1, 2, 3];
-var n = nums1.length;
+var n = nums.length;
 var index = search(nums, 0, n - 1, 3);
 console.log('Found at ', index);
