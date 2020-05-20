@@ -19,7 +19,7 @@ function isPalindrome(head) {
     second_half = reverse(second_half);
 
     while (second_half) {
-        if (current.element != second_half.element) {
+        if (current.data != second_half.data) {
             palindrome = false;
         }
         current = current.next;

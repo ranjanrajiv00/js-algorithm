@@ -3,13 +3,13 @@ var { LinkedList } = require('./linked-list');
 function interset(list1, list2) {
     var intersectedList = new LinkedList();
     while (list1 && list2) {
-        if (list1.element === list2.element) {
-            intersectedList.add(list1.element);
+        if (list1.data === list2.data) {
+            intersectedList.add(list1.data);
             list1 = list1.next;
             list2 = list2.next;
         }
 
-        else if (list1.element < list2.element) {
+        else if (list1.data < list2.data) {
             list1 = list1.next;
         }
         else {

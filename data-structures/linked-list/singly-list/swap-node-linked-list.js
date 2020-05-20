@@ -9,10 +9,10 @@ class List extends LinkedList {
         var current = this.head;
         var node1, node2;
         while (current.next != null) {
-            if (current.next.element === a) {
+            if (current.next.data === a) {
                 node1 = current;
             }
-            if (current.next.element === b) {
+            if (current.next.data === b) {
                 node2 = current;
             }
             current = current.next;

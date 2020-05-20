@@ -1,6 +1,6 @@
 class Node {
-    constructor(element) {
-        this.element = element;
+    constructor(data) {
+        this.data = data;
         this.next = null;
     }
 }
@@ -12,8 +12,8 @@ class LinkedList {
         this.size = 0
     }
 
-    add(element) {
-        var node = new Node(element);
+    add(data) {
+        var node = new Node(data);
         if (this.head === null) {
             this.head = node;
             this.tail = node;
@@ -29,7 +29,7 @@ class LinkedList {
         var current = this.head;
         console.log('*****list*****');
         while (current) {
-            console.log(current.element);
+            console.log(current.data);
             current = current.next;
         }
     }

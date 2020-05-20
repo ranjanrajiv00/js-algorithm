@@ -14,7 +14,7 @@ class List extends LinkedList {
             fast = fast.next.next;
         }
 
-        console.log('Middle of list - ', slow.element);
+        console.log('Middle of list - ', slow.data);
     }
 }
 

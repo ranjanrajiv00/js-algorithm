@@ -11,12 +11,12 @@ class List extends LinkedList {
         var prev = null;
         
         while (current != null) {
-            if (hashSet[current.element]) {
+            if (hashSet[current.data]) {
                 prev.next = current.next;
                 prev = current.next;
             }
             else {
-                hashSet[current.element] = true;
+                hashSet[current.data] = true;
                 prev = current;
             }
             current = current.next;

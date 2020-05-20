@@ -5,8 +5,8 @@ class List extends LinkedList {
         super();
     }
 
-    insertAt(element, index) {
-        var node = new Node(element);
+    insertAt(data, index) {
+        var node = new Node(data);
         if (index === 0) {
             node.next = this.head;
             this.head = node;
@@ -25,11 +25,11 @@ class List extends LinkedList {
         this.size++;
     }
 
-    remove(element) {
+    remove(data) {
         var current = this.head;
         var previous = null;
         while (current) {
-            if (current.element === element) {
+            if (current.data === data) {
                 if (previous === null) {
                     this.head = current.next;
                 }

@@ -22,7 +22,7 @@ var linkedList = new List();
 linkedList.add(100);
 linkedList.add(200);
 linkedList.add(200);
-linkedList.add(200);
+linkedList.add(300);
 linkedList.add(400);
 linkedList.add(400);
 linkedList.add(500);
