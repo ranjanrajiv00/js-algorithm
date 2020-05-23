@@ -1,6 +1,7 @@
 class Node {
     constructor(data) {
         this.data = data;
+        this.prev = null;
         this.next = null;
     }
 }
@@ -19,6 +20,7 @@ class LinkedList {
             this.tail = node;
         }
         else {
+            node.prev = this.tail;
             this.tail.next = node;
             this.tail = node;
         }
@@ -31,6 +33,13 @@ class LinkedList {
         while (current) {
             console.log(current.data);
             current = current.next;
+        }
+
+        current = this.tail;
+        console.log('*****list*****');
+        while (current) {
+            console.log(current.data);
+            current = current.prev;
         }
     }
 }
