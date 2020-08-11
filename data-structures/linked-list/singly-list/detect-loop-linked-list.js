@@ -21,7 +21,7 @@ linkedList1.add(300);
 linkedList1.add(400);
 linkedList1.add(500);
 
-linkedList1.head.next.next.next.next.next = linkedList1.head;
+linkedList1.head.next.next.next.next = linkedList1.head.next;
 
 var found = hasLoop(linkedList1.head);
 
